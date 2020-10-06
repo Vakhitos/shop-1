@@ -1,0 +1,4 @@
+AuthType Basic
+AuthNAme admin
+AuthUserFile /OSPanel/domains/shop.local/pwdaccess
+require valid-user

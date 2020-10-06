@@ -1,0 +1,567 @@
+/* =================== */
+/* === OHTER STYLES == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.hide {
+  display: none;
+}
+.warning {
+  h1 {
+    text-align: center;
+    color: #e0e0e0;
+  }
+}
+/* ======================= */
+/* === WRAPPERS STYLES === */
+
+/* .header >> */
+.header {
+  background: #fff;
+  &-top {
+    border-bottom: 1px solid #ebebeb;
+    &__inner {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+    }
+  }
+  &-bottom {
+    border-bottom: 1px solid #ebebeb;
+    &__inner {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      padding: 5px 0;
+    }
+  }
+}
+/* << .header */
+
+
+
+/* .wrapper >> */
+.wrapper {
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    min-height: 100vh;
+  }
+}
+/* << .wrapper */
+
+/* .aside >> */
+.aside {
+  padding: 0 30px 0 0;
+  width: 20%;
+
+  &__block {
+    border: solid 1px #eee;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 400;
+    color: #333;
+    font-size: 19px;
+    padding-bottom: 5px;
+    &.link-toggle {
+      cursor: pointer;
+      color: #0d86d6;
+      text-decoration: underline;
+    }
+  }
+}
+/* << .aside */
+
+/* .work-area >> */
+.work-area {
+  width: 80%;
+}
+/* << .work-area */
+
+/* .section >> */
+.section {
+  padding: 50px 0;
+  &__head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  &__title {
+    display: inline-block;
+    color: #333;
+    border-bottom: solid 1px #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: 400;
+  }
+}
+/* << .section */
+
+/* .main-footer >> */
+.main-footer {
+  border-top: 1px solid #ebebeb;
+  padding: 20px 0;
+}
+/* << .main-footer */
+
+/*===========================*/
+/* === COMPONENTS STYLES === */
+
+/* .logotype >> */
+.logo {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+  color: #333;
+}
+/* << .logotype */
+
+/* Вход в карзину >> */ 
+.goToBasket {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #eee;
+  border-radius: 50%;
+  position: relative;
+  &__counter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #e73a2d;
+    border-radius: 50%;
+    left: -5px;
+    bottom: -5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1px;
+    font-size: 12px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+  }
+}
+/* << */ 
+
+/* .nav-horisontal >> */
+.nav-horizontal {
+  display: flex;
+
+  .menu-horizontal {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &__item {
+      list-style: none;
+    }
+    &__link {
+      font-size: 14px;
+      color: #333;
+      display: block;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+  }
+}
+/* << .nav-horisontal */
+
+/* .search >> */
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-basis: 20%;
+
+  &__input {
+    width: 100%;
+    border: solid 1px #eee;
+    padding: 10px 10px;
+    border-radius: 30px;
+    &::placeholder {
+      font-size: 14px;
+      color: #333;
+    }
+  }
+  &__btn {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: #8f8f8f;
+  }
+}
+/* << .search */
+
+.menu-categories {
+  &__item {
+    display: block;
+    list-style: none;
+    color: #ffffff;
+    border-top: solid 1px#fff;
+    position: relative;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    background: #3098ee;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+    position: relative;
+    &:hover {
+      background: #469fe7;
+    }
+
+    & .svg {
+      display: block;
+      margin-left: auto;
+      width: 15px;
+      height: 15px;
+      fill: #fff;
+      transition: 0.2s;
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .menu-children {
+    &__item {
+      list-style: none;
+      color: #5f6368;
+      padding-left: 10px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      padding: 5px 0;
+      transition: 0.3s;
+      font-size: 14px;
+      &:hover {
+        color: #1a73e8;
+      }
+    }
+  }
+}
+
+/* .user >> */
+.user {
+  display: flex;
+  margin-bottom: 20px;
+  &__link {
+    text-decoration: none;
+    display: block;
+    border: solid 1px #eee;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+  }
+}
+/* << .user */
+
+
+
+
+/* Карточка товара >> */
+.card-product {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #eee;
+  border-radius: 2px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__media {
+    padding: 5px;
+    margin: 0;
+    border-bottom: solid 1px #eee;
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__footer {
+    background: #fff;
+    padding: 10px 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+  }
+  &__price {
+    margin-top: auto;
+    font-weight: 500;
+    color: #e73a2d;
+    font-size: 15px;
+    &::after {
+      content: "\20bd";
+      color: #e73a2d;
+      margin-left: 10px;
+      font-size: 18px;
+    }
+  }
+}
+/* << Карточка товара */
+
+/* Карточка Категорий товара >> */
+.card-category {
+  border: solid 1px #eee;
+  padding: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+}
+/* << Карточка Категорий товара */
+
+// Регистрация и Автоизация >>
+
+.login {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: solid 1px #eee;
+    font-size: 14px;
+    color: #333;
+    &::placeholder {
+      color: #a5a5a5;
+    }
+  }
+  &__btn {
+    border: solid 1px #eee;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}
+.registration-form {
+  margin-bottom: 10px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  &.show {
+    display: flex;
+  }
+  &__input {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: solid 1px #eee;
+    font-size: 14px;
+    color: #333;
+    &::placeholder {
+      color: #a5a5a5;
+    }
+  }
+  &__btn {
+    border: solid 1px #eee;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+}
+// << Регистрация и Автоизация
+
+/* Таблица карзыны >> */
+.block-cart {
+  &__title {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__table {
+    border: solid 1px #eee;
+    padding: 10px;
+  }
+
+  &__col {
+    border: solid 1px #eee;
+    padding: 10px;
+    font-size: 14px;
+  }
+  &__link {
+    font-weight: 500;
+    color: #e73a2d;
+    font-size: 15px;
+    &.hide {
+      display: none;
+    }
+  }
+  &__btn {
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+}
+/* << Таблица карзыны */
+
+.product-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  .col {
+    width: calc(100% / 5);
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+.product-view {
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__img {
+    display: block;
+  }
+  &__info {
+    padding-left: 30px;
+  }
+  &__name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+  }
+  &__desc {
+    padding: 20px 0;
+    max-width: 500px;
+    font-size: 14px;
+    color: #333;
+  }
+  &__footer {
+    margin-top: 20px;
+    border: solid 1px #eee;
+    border-radius: 2px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__price {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #e73a2d;
+    font-weight: 500;
+    &.hide {
+      display: none;
+    }
+  }
+}
+
+/* Кабинет пользователя >> */
+.user_acount {
+  border: solid 1px #eee;
+
+  &__header {
+    padding: 10px 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #eee;
+  }
+  &__title {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  &__email {
+    background: #eee;
+    padding: 10px;
+  }
+  &__content {
+    padding: 20px;
+  }
+  &__table {
+    width: 100%;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #eee;
+  }
+  &__input {
+    padding: 0 10px;
+    border: none;
+    outline: none;
+  }
+  &__btn {
+    margin-top: 20px;
+    background: #ee503b;
+    border: solid 1px #eee;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: block;
+    margin-left: auto;
+    color: #fff;
+  }
+}
+/* << Кабинет пользователя */

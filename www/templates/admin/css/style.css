@@ -1,0 +1,326 @@
+/* =================== */
+/* === OHTER STYLES == */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.adminContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.adminHeader {
+  padding: 20px 0;
+  border-bottom: solid 1px #eee;
+}
+
+.adminFooter {
+  padding: 20px 0;
+  border-top: solid 1px #eee;
+}
+
+/* .adminWrapper >> */
+.adminWrapper__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+/* << .adminWrapper */
+/* .aside >> */
+.aside {
+  padding: 0 30px 0 0;
+  width: 20%;
+}
+
+.aside__section {
+  border: solid 1px #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.aside__title {
+  font-weight: 400;
+  color: #333;
+  font-size: 19px;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.aside__title.register-toggle {
+  cursor: pointer;
+  color: #0d86d6;
+  text-decoration: underline;
+}
+
+/* << .aside */
+/* .work-area >> */
+.work-area {
+  width: 80%;
+}
+
+/* << .work-area */
+/* .section >> */
+.section__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.section__title {
+  display: inline-block;
+  color: #333;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* << .section */
+.blockNewCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 400px;
+}
+
+.blockNewCategory .input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.blockNewCategory .input-block input,
+.blockNewCategory .input-block select,
+.blockNewCategory .input-block textarea {
+  margin-top: 10px;
+  border: solid 1px #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.blockNewCategory button {
+  background: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border: solid 1px #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.adminHeaderLine {
+  background: #484848;
+}
+
+.adminHeaderLine__inner {
+  padding-top: 20px;
+}
+
+.nav-gorizontal .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-gorizontal .menu__item {
+  display: block;
+  list-style: none;
+}
+
+.nav-gorizontal .menu__link {
+  display: block;
+  text-decoration: none;
+  background: #428aff;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.nav-vertical .menu__item {
+  display: block;
+  list-style: none;
+  border-top: 1px solid #fff;
+}
+
+.nav-vertical .menu__link {
+  display: block;
+  text-decoration: none;
+  background: #428aff;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.selectNewProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 400px;
+}
+
+.selectNewProduct .input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.selectNewProduct .input-block input,
+.selectNewProduct .input-block select,
+.selectNewProduct .input-block textarea {
+  margin-top: 10px;
+  border: solid 1px #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.selectNewProduct button {
+  background: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border: solid 1px #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.updateCategory table {
+  border-collapse: collapse;
+}
+
+.updateCategory table caption {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.updateCategory table thead th {
+  font-weight: 200;
+  font-size: 14px;
+  padding: 5px;
+  background: #428aff;
+  color: #fff;
+}
+
+.updateCategory table tbody {
+  padding: 5px;
+}
+
+.updateCategory table tbody tr {
+  border-bottom: solid 1px #eee;
+}
+
+.updateCategory table tbody tr td {
+  padding: 10px;
+}
+
+.updateCategory table tbody tr td input,
+.updateCategory table tbody tr td select {
+  border: solid 1px #eee;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.updateCategory table tbody tr td button {
+  background: #fff;
+  border: solid 1px #eee;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.updateProduct {
+  margin-top: 50px;
+}
+
+.updateProduct table {
+  border-collapse: collapse;
+}
+
+.updateProduct table caption {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.updateProduct table thead th {
+  font-weight: 200;
+  font-size: 14px;
+  padding: 5px;
+  background: #428aff;
+  color: #fff;
+}
+
+.updateProduct table tbody {
+  padding: 5px;
+}
+
+.updateProduct table tbody tr {
+  border-bottom: solid 1px #eee;
+}
+
+.updateProduct table tbody tr td {
+  padding: 10px;
+}
+
+.updateProduct table tbody tr td input,
+.updateProduct table tbody tr td select, .updateProduct table tbody tr td textarea {
+  border: solid 1px #eee;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.updateProduct table tbody tr td img {
+  max-width: 50px;
+}
+
+.updateProduct table tbody tr td button {
+  background: #fff;
+  border: solid 1px #eee;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
